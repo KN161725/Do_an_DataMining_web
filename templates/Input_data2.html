@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #attribute-info {
+            text-align: left;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Input data to predict.</h1>
+    <p>Enter some text in the box below:</p>
+    <p>Model Cây quyết định phân lớp, dự đoán mức độ rủi ro của phụ nữ mang thai. Tập dữ liệu có dữ liệu đầu ra là 1 trong 3 lớp: low risk, mid risk, high risk. Đầu vào gồm 6 đặc trưng</p>
+    <form method="POST">
+        
+        <label for="age">Tuổi:</label>
+        <input type="text" id="age" name="age" placeholder="nhập tuổi...">
+
+        <label for="systolicBP">Huyết áp trên (tâm thu):</label>
+        <input type="text" id="systolicBP" name="systolicBP" placeholder="nhập huyết áp...">
+
+        <label for="diastolicBP">Huyết áp dưới (tâm trương):</label>
+        <input type="text" id="diastolicBP" name="diastolicBP" placeholder="nhập huyết áp..." >
+        
+        <label for="bs">Chỉ số đường huyết:</label>
+        <input type="text" id="bs" name="bs"  placeholder="nhập chỉ số đường huyết...">
+        <label for="bodyTemp">Nhiệt độ cơ thể:</label>
+        <input type="text" id="bodyTemp" name="bodyTemp"  placeholder="nhập nhiệt độ cơ thể...">
+        <label for="heartRate">Nhịp tim:</label>
+        <input type="text" id="heartRate" name="heartRate"  placeholder="nhập nhịp tim...">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

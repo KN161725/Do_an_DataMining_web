@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Error!!
+        </title>
+    </head>
+    <body>
+     <h1> Error in send data.</h1>
+     <h2>Lỗi trong việc gửi dữ liệu. Gửi dữ liệu đúng theo biểu mẫu có sẵn </h2>
+     <div>
+            Các giá trị không hợp lệ hoặc không được nhập vào trong biểu mẫu được thiết lặp là "Invalid":<br>
+            <ol>
+                <li type="1"> Tuổi: {{age}}</li>
+                <li type="1"> Huyết áp trên (tâm thu): {{systolicBP}}</li>
+                <li type="1"> Huyết áp dưới (tâm trương): {{diastolicBP}}</li>
+                <li type="1"> Chỉ số đường huyết: {{bs}}</li>
+                <li type="1"> Nhiệt độ cơ thể: {{bodyTemp}}</li>
+                <li type="1"> Nhịp tim: {{heartRate}}</li>
+            </ol>    
+    </div>
+     <h3><a href="{{url_for('input_data')}}">Quay lại trang input</a></h3>
+     <h3><a href="{{url_for('Home_page')}}">Quay lại trang chủ</a> </h3>
+    </body>
+</html>
